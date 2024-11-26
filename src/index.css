@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+  width: 375px; /* iPhone X 크기 (모바일 화면 고정) */
+  height: 667px; /* iPhone X 크기 (모바일 화면 고정) */
+  margin: 0 auto; /* 화면 중앙에 배치 */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto; /* 화면이 고정된 크기 내에서 스크롤 가능 */
+}
+
+/* Full screen mobile layout */
+@media (max-width: 768px) {
+  body {
+    width: 375px; /* 화면 크기를 모바일 크기로 고정 (예: iPhone X 크기) */
+    margin: 0 auto; /* 중앙 정렬 */
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-bar input {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .content {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .posts {
+    margin-top: 20px;
+  }
+
+  .footer-icons {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
