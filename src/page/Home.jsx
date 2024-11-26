@@ -1,50 +1,37 @@
 import "./Home.css";
 
 const Home = () => {
+  // 5개의 더미 게시글 데이터를 배열로 정의
+  const postsData = [1, 2, 3, 4, 5]; // 5번 반복
+
   return (
-    <div>
-      <div>
-        <header className="navbar">
-          <div className="logo">Instagram</div>
-          <div className="search-bar">
-            <input type="text" placeholder="검색" />
-          </div>
-          <div className="icons">
-            <div className="icon">🏠</div>
-            <div className="icon">🔔</div>
-            <div className="icon">✉️</div>
-          </div>
-        </header>
+    <div className="Home">
+      <header className="navbar">
+        <div className="camera">
+          <div className="icon">📷</div>
+        </div>
+        <div className="logo">Instagram</div>
 
-        <main className="content">
-          <div className="sidebar">
-            <div className="profile">
-              <img
-                src="https://via.placeholder.com/50"
-                alt="Profile"
-                className="profile-pic"
-              />
-              <p className="username">사용자 이름</p>
-            </div>
-            <div className="suggestions">
-              <h2>회원 추천</h2>
-              <ul>
-                <li>추천 사용자 1</li>
-                <li>추천 사용자 2</li>
-                <li>추천 사용자 3</li>
-              </ul>
-            </div>
-          </div>
+        <div className="icons">
+          <div className="icon">✉️</div>
+        </div>
+      </header>
 
-          <div className="posts">
-            <div className="post">
+      <main className="content">
+        <div className="posts">
+          {/* 5개의 게시글을 반복 */}
+          {postsData.map((post, index) => (
+            <div className="post" key={index}>
               <header className="post-header">
                 <img
                   src="https://via.placeholder.com/50"
                   alt="User"
                   className="post-user-pic"
                 />
-                <span className="post-username">사용자 이름</span>
+                <div className="post-usertext">
+                  <span className="post-username">사용자 이름</span>
+                  <span className="post-userwords">사용자 이름</span>
+                </div>
               </header>
               <img
                 src="https://via.placeholder.com/500"
@@ -52,44 +39,32 @@ const Home = () => {
                 className="post-image"
               />
               <div className="post-footer">
-                <button className="like-btn">❤️ 좋아요</button>
-                <button className="comment-btn">💬 댓글</button>
+                <div>
+                  <button className="like-btn">❤️ </button>
+                  <button className="comment-btn">💬 </button>
+                  <button className="chat-btn">✉️</button>
+                </div>
+                <div>
+                  <div className="save-btn">💾</div>
+                </div>
               </div>
+              <div className="post-text">내용</div>
             </div>
+          ))}
+        </div>
+      </main>
 
-            <div className="post">
-              <header className="post-header">
-                <img
-                  src="https://via.placeholder.com/50"
-                  alt="User"
-                  className="post-user-pic"
-                />
-                <span className="post-username">사용자 이름</span>
-              </header>
-              <img
-                src="https://via.placeholder.com/500"
-                alt="Post Image"
-                className="post-image"
-              />
-              <div className="post-footer">
-                <button className="like-btn">❤️ 좋아요</button>
-                <button className="comment-btn">💬 댓글</button>
-              </div>
-            </div>
-          </div>
-        </main>
-
-        <footer className="footer">
-          <div className="footer-icons">
-            <div className="footer-icon">🏠</div>
-            <div className="footer-icon">🔍</div>
-            <div className="footer-icon">➕</div>
-            <div className="footer-icon">❤️</div>
-            <div className="footer-icon">👤</div>
-          </div>
-        </footer>
-      </div>
+      <footer className="footer">
+        <div className="footer-icons">
+          <div className="footer-icon">🏠</div>
+          <div className="footer-icon">🔍</div>
+          <div className="footer-icon">➕</div>
+          <div className="footer-icon">❤️</div>
+          <div className="footer-icon">👤</div>
+        </div>
+      </footer>
     </div>
   );
 };
+
 export default Home;

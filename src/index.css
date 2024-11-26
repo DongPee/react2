@@ -7,8 +7,9 @@
 /* Body styles */
 body {
   font-family: Arial, sans-serif;
-  background-color: #fafafa;
-  width: 375px; /* iPhone X 크기 (모바일 화면 고정) */
+  background-color: #161616;
+  /* 적용 안됨 */
+  width: 600px; /* iPhone X 크기 (모바일 화면 고정) */
   height: 667px; /* iPhone X 크기 (모바일 화면 고정) */
   margin: 0 auto; /* 화면 중앙에 배치 */
   display: flex;
