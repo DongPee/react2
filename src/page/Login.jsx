@@ -26,12 +26,12 @@ const Login = () => {
     <div className="Login">
       <div className="login-box">
         {/* Instagram Logo */}
-        <div className="logo">
+        <Link className="logo" to="/">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
             alt="Instagram Logo"
           />
-        </div>
+        </Link>
 
         {/* Login Form */}
         <form onSubmit={handleLogin}>
@@ -70,9 +70,7 @@ const Login = () => {
         {successMessage && <p className="success">{successMessage}</p>}
         {errorMessage && <p className="error">{errorMessage}</p>}
       </div>
-      <div>
-        <Link to="/">Home</Link>
-      </div>
+      <div></div>
     </div>
   );
 };
