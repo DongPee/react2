@@ -1,4 +1,5 @@
 import "./Home.css";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   // 5개의 더미 게시글 데이터를 배열로 정의
@@ -60,7 +61,9 @@ const Home = () => {
           <div className="footer-icon">🔍</div>
           <div className="footer-icon">➕</div>
           <div className="footer-icon">❤️</div>
-          <div className="footer-icon">👤</div>
+          <div className="footer-icon">
+            <Link to="/login">👤</Link>
+          </div>
         </div>
       </footer>
     </div>

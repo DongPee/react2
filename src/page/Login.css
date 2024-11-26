@@ -1,0 +1,151 @@
+/* Reset some default styles */
+
+*::-webkit-scrollbar {
+  display: none; /* 스크롤 바 숨기기 */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* background-color: white; */
+}
+
+.Login {
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container to center the login box */
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Login Box Styling */
+.login-box {
+  width: 350px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.logo img {
+  width: 175px;
+  margin-bottom: 30px;
+}
+
+/* Form Input Styling */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Login Button Styling */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #0095f6;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.login-btn:hover {
+  background-color: #007bb5;
+}
+
+/* Forgot Password Link Styling */
+.forgot-password {
+  margin-top: 10px;
+}
+
+.forgot-password a {
+  font-size: 14px;
+  color: #0095f6;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+/* OR Divider */
+.divider {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.divider span {
+  flex-grow: 1;
+  border-top: 1px solid #dbdbdb;
+  margin: 0 10px;
+  text-align: center;
+  color: #999;
+}
+
+/* Facebook Login Button */
+.fb-login {
+  width: 100%;
+  padding: 12px;
+  background-color: #4267b2;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.fb-login:hover {
+  background-color: #365899;
+}
+
+/* Sign Up Link */
+.signup-link {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.signup-link a {
+  color: #0095f6;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+/* Success and Error Messages */
+.success {
+  color: green;
+  margin-top: 20px;
+}
+
+.error {
+  color: red;
+  margin-top: 20px;
+}

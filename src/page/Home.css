@@ -8,10 +8,9 @@
 /* Body styles */
 body {
   font-family: Arial, sans-serif;
-  height: 100vh; /* 전체 화면 높이를 100%로 설정 */
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #fafafa;
 }
 
 .Home {
@@ -35,7 +34,7 @@ body {
 }
 
 .navbar .logo {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
 }
 
@@ -49,10 +48,10 @@ body {
 .navbar .icons {
   display: flex;
 }
-.navbar .icons .icon {
+.navbar .icon {
   margin: 0 10px;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 25px;
 }
 
 /* Main content layout (vertical) */
@@ -71,7 +70,7 @@ body {
 /* Posts area styles */
 .posts {
   width: 100%;
-  margin-top: 60px;
+  margin-top: 70px;
 }
 
 .post {
